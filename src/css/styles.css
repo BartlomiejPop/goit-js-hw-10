@@ -12,15 +12,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(https://img.freepik.com/premium-wektory/mapa-swiata-na-bialym-tle_87498-300.jpg?w=2000);
   background-size: 150%;
-  background-repeat: repeat;
   color: #212121;
   line-height: 1.5;
   background-attachment: fixed;
-
+  background-repeat: repeat;
   -webkit-animation-name: MOVE-BG;
   -webkit-animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+}
+
+@media (max-width: 1280px) {
+  body {
+    background-size: 250%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-size: 400%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 500%;
+  }
 }
 
 img {
@@ -40,11 +57,24 @@ img {
   border-radius: 8px;
 }
 
+@media (max-width: 580px) {
+  .wrapper {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}
+
 #search-box {
   font: inherit;
   padding: 4px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+@media (max-width: 580px) {
+  #search-box {
+    width: 90%;
+  }
 }
 
 .country-list {
