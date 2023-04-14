@@ -20,7 +20,7 @@ body {
   -webkit-animation-name: MOVE-BG;
   -webkit-animation-duration: 100s;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
 }
 
 img {
@@ -60,6 +60,9 @@ li {
   border-bottom: 1px solid rgb(216, 215, 215);
 }
 
+ul {
+  padding: 0;
+}
 @-webkit-keyframes MOVE-BG {
   from {
     background-position: 0% 20%;
